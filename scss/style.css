@@ -200,6 +200,30 @@ body {
   height: 4px;
 }
 
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: none;
+  color: #FFFFFF;
+}
+
+.content-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: none;
+  color: #F67E7E;
+}
+
+.content-subtitle {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  text-transform: none;
+  color: #FFFFFF;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -302,4 +326,65 @@ main .main-page__content .main-page__decor-element1 {
 main .main-page__content .main-page__decor-element2 {
   bottom: -105px;
   right: 0;
+}
+main .build {
+  background-color: #012F34;
+  overflow-x: hidden;
+}
+main .build-content {
+  padding: 140px 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: row;
+  position: relative;
+}
+main .build-content__leftside .build-content__line {
+  background-color: #F67E7E;
+  margin-bottom: 55px;
+}
+main .build-content__leftside__title {
+  max-width: 445px;
+}
+main .build-content__rightside__list {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-direction: column;
+  row-gap: 30px;
+}
+main .build-content__rightside__list-item {
+  max-width: 530px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  -moz-column-gap: 22px;
+       column-gap: 22px;
+}
+main .build-content__rightside__list-item .list-item__circle {
+  position: relative;
+  min-width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #2C6269;
+}
+main .build-content__rightside__list-item .list-item__circle svg {
+  position: absolute;
+  top: -16px;
+  left: -16px;
+}
+main .build-content__rightside__list-item .list-item__circle svg path {
+  fill: #79C8C7;
+}
+main .build-content__rightside__list-item__content-title {
+  margin-bottom: 15px;
+}
+main .build-content__rightside__list-item__content-subtitle {
+  opacity: 0.8;
+}
+main .build-content .build-decor__element {
+  position: absolute;
+  bottom: 0px;
+  right: -215px;
 }/*# sourceMappingURL=style.css.map */
