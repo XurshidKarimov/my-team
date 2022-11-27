@@ -1,2 +1,57 @@
 @import "nullstyle.scss";
 @import "fonts.scss";
+
+
+// !!COLORS
+// -----FONT_COLORS-----
+$logo-font__color: #FFFFFF;
+$header-logo-font__color: $logo-font__color;
+$header-nav-link-font__color: #FFFFFF;
+$header-btn-font__color: #FFFFFF;
+$main-page-title-font__color: #FFFFFF;
+$main-page-title-span-font__color: #F67E7E;
+$main-page-subtitle-font__color: #FFFFFF;
+$allSection-title-font__color: #FFFFFF;
+$build-title-font__color: $allSection-title-font__color;
+$build-list-item-title-font__color: #F67E7E;
+$build-list-item-subtitle-font__color: #FFFFFF;
+$delivering-title-font__color: #FFFFFF;
+$delivering-title-span-font__color: #79C8C7;
+$delivering-blockquote-text-font__color: #FFFFFF;
+$delivering-blockquote-text-author-font__color: #79C8C7;
+$delivering-blockquote-text-author-job-font__color: #FFFFFF;
+$ready-title-font__color: #012F34;
+$ready-btn-font__color: #012F34;
+$footer-logo-font__color: $logo-font__color;
+$footer-nav-link-font__color: $header-nav-link-font__color;
+$footer-address-font__color: #FFFFFF;
+$footer-copy-font__color: #FFFFFF;
+
+
+// -----ELEMENT_COLORS-----
+$main-page-bg__color: #014E56;
+$header-btn-border__color: #FFFFFF;
+$header-btn-bg__color: #2C6269;
+$main-page-line-bg__color: #79C8C7;
+$build-section-bg__color: #012F34;
+$build-list-item-circle-bg__color: #2C6269;
+$build-list-item-SVGicon-fill__color: #79C8C7;
+$delivering-bg__color: #004047;
+$delivering-quote-bg__color: #2C6269;
+$delivering-image-border__color: #C4FFFE;
+$ready-bg__color: #F67E7E;
+$ready-btn-bg__color: transparent;
+$ready-btn-border__color: #012F34;
+$footer-bg__color: #002529;
+$footer-social-icon-fill__color: #FFFFFF;
+
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    // background: #014E56;
+}
