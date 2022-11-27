@@ -34,7 +34,7 @@
 
 @mixin responsiveProp($property, $maxSize, $minSize) {
   $addSize: $maxSize - $minSize;
-  #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / (2560 - 320)));
+  #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / (1110 - 320)));
 }
 
 
