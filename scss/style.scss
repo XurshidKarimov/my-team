@@ -66,12 +66,18 @@ $footer-social-icon-fill__color: #FFFFFF;
     @include flex($cGap: 40);
 }
 
+.nav-link {
+    @include font(18, 600, 28, none, $header-nav-link-font__color);
+    transition: linear .3s;
+}
+
 .btn {
     padding: 10px 32px;
     border: 2px solid #FFFFFF;
     border-radius: 25px;
     background-color: transparent;
     transition: linear .3s;
+    @include font(18, 600, 28, none, inherit);
 }
 
 .line {
@@ -111,23 +117,11 @@ header {
 
         &__leftside {
             @include flex(center, $cGap: 80);
-
-            &__navbar {}
-
-            &__nav-list {
-                &__item {
-                    & a {
-                        @include font(18, 600, 28, none, $header-nav-link-font__color);
-                        transition: linear .3s;
-                    }
-                }
-            }
-
         }
 
         &__contact-btn {
             border-color: $header-btn-border__color;
-            @include font(18, 600, 28, none, $header-btn-font__color);
+            color: $header-btn-font__color;
             background-color: $header-btn-bg__color;
 
             &:hover {
@@ -357,4 +351,79 @@ main {
         }
     }
 
+    & .ready {
+        background-color: $ready-bg__color;
+        overflow-y: hidden;
+
+        &-content {
+            padding: 75px 0;
+            position: relative;
+            max-width: 915px;
+            margin: 0 auto;
+            @include flex($jContent: space-between);
+
+            &__title {
+                color: $ready-title-font__color;
+            }
+
+            &__btn {
+                color: $ready-btn-font__color;
+                border-color: $ready-btn-border__color;
+                background-color: $ready-btn-bg__color;
+            }
+
+            &__decor {
+                position: absolute;
+                top: 65px;
+                left: -250px;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $footer-bg__color;
+
+    & .footer-content {
+        padding: 50px 0;
+        @include flex(center, space-between);
+
+        &__leftside {
+            @include flex($cGap: 125);
+
+            &__logo-link {
+                margin-bottom: 25px;
+            }
+
+            & address {
+                & span {
+                    display: block;
+                    @include font(15, 600, 25, none, $footer-address-font__color);
+                    opacity: .6;
+                    font-style: normal;
+                }
+            }
+        }
+
+        &__rightside {
+            width: 255px;
+            @include flex($fDirection: column, $rGap: 50);
+
+            &__social {
+                align-self: flex-end;
+                @include flex(center, $cGap: 15);
+
+                & a svg {
+                    & path {
+                        fill: $footer-social-icon-fill__color;
+                    }
+                }
+            }
+
+            &__copy {
+                @include font(15, 600, 25, none, $footer-copy-font__color);
+                opacity: .6;
+            }
+        }
+    }
 }
