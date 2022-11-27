@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -387,4 +388,98 @@ main .build-content .build-decor__element {
   position: absolute;
   bottom: 0px;
   right: -215px;
+}
+main .delivering {
+  background-color: #004047;
+  overflow: hidden;
+}
+main .delivering-content {
+  padding: 140px 0;
+  position: relative;
+}
+main .delivering-content__title {
+  max-width: 930px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 55px;
+}
+main .delivering-content__title span {
+  color: #79C8C7;
+}
+main .delivering-content__card-list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: row;
+}
+main .delivering-content__card-list__item {
+  padding: 35px 5px 5px 5px;
+  width: 350px;
+  min-height: 310px;
+  position: relative;
+}
+main .delivering-content__card-list__item:before {
+  content: "“";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 220px;
+  color: #2C6269;
+}
+main .delivering-content__card-list__item blockquote .__text {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  text-transform: none;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 25px;
+  z-index: 1;
+  position: relative;
+}
+main .delivering-content__card-list__item blockquote figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  row-gap: 2px;
+  margin-bottom: 30px;
+}
+main .delivering-content__card-list__item blockquote figcaption .__author {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: none;
+  color: #79C8C7;
+}
+main .delivering-content__card-list__item blockquote figcaption .__author-job {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: none;
+  color: #FFFFFF;
+  font-style: italic;
+}
+main .delivering-content__card-list__item blockquote .__imgbox {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #C4FFFE;
+  margin: 0 auto;
+}
+main .delivering-content__card-list__item blockquote .__imgbox img {
+  width: 100%;
+  height: 100%;
+}
+main .delivering-content__decor1, main .delivering-content__decor2 {
+  position: absolute;
+}
+main .delivering-content__decor1 {
+  top: 0;
+  left: -125px;
+}
+main .delivering-content__decor2 {
+  bottom: -100px;
+  right: -220px;
 }/*# sourceMappingURL=style.css.map */

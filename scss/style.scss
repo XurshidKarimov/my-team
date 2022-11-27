@@ -262,4 +262,99 @@ main {
         }
     }
 
+    & .delivering {
+        background-color: $delivering-bg__color;
+        overflow: hidden;
+
+        &-content {
+            padding: 140px 0;
+            position: relative;
+
+            &__title {
+                max-width: 930px;
+                margin: 0 auto;
+                text-align: center;
+                margin-bottom: 55px;
+
+                & span {
+                    color: $delivering-title-span-font__color;
+                }
+            }
+
+            &__card-list {
+                @include flex($jContent: space-between);
+
+                &__item {
+                    padding: 35px 5px 5px 5px;
+                    width: 350px;
+                    min-height: 310px;
+                    position: relative;
+
+                    &:before {
+                        content: '“';
+                        position: absolute;
+                        top: -20px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        font-size: 220px;
+                        color: $delivering-quote-bg__color;
+                    }
+
+                    & blockquote {
+                        & .__text {
+                            @include font(15, 600, 25, none, $delivering-blockquote-text-font__color);
+                            text-align: center;
+                            margin-bottom: 25px;
+                            z-index: 1;
+                            position: relative;
+                        }
+
+                        & figcaption {
+                            @include flex(center, $fDirection: column, $rGap: 2);
+                            margin-bottom: 30px;
+
+                            & .__author {
+                                @include font(18, 700, 28, none, $delivering-blockquote-text-author-font__color);
+                            }
+
+                            & .__author-job {
+                                @include font(13, 400, 18, none, $delivering-blockquote-text-author-job-font__color);
+                                font-style: italic;
+                            }
+                        }
+
+                        & .__imgbox {
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            border: 2px solid $delivering-image-border__color;
+                            margin: 0 auto;
+
+                            & img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            &__decor1,
+            &__decor2 {
+                position: absolute;
+            }
+
+            &__decor1 {
+                top: 0;
+                left: -125px;
+            }
+
+            &__decor2 {
+                bottom: -100px;
+                right: -220px;
+            }
+        }
+    }
+
 }
